@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 
 import com.squareup.picasso.Picasso;
 import com.synnapps.carouselview.CarouselView;
@@ -28,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setCarsoulView();
+
+        RatingBar rt =(RatingBar)findViewById(R.id.ratingBar);
+        rt.setIsIndicator(true);
+        rt.setNumStars(5);
+        rt.setStepSize(0.4f);
+
+        rt.setPaddingRelative(0,0,0,0);
+
 
         expListView = (ExpandableListView) findViewById(R.id.Expandablelist);
 

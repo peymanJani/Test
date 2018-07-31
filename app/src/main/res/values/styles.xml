@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Theme.Rating" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#fcf53d</item>
+    </style>
+
 </resources>
