@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#dedede"
+    tools:context=".MainActivity">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="8dp"
+                android:elevation="5dp"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <com.synnapps.carouselview.CarouselView
+                    android:id="@+id/carouselView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:fillColor="#FFFFFFFF"
+                    app:pageColor="#00000000"
+                    app:radius="3dp"
+                    app:slideInterval="3000"
+                    app:strokeColor="#FF777777"
+                    app:strokeWidth="0.3dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:elevation="5dp"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right"
+                    android:text="تست نقشه آیتیکت"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/aa"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:padding="7dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/linear_style"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@drawable/discount"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp" />
+                        <TextView
+                            android:layout_marginRight="1dp"
+                            android:layout_marginLeft="4dp"
+                            android:text="99"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#156b03"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="8dp"
+                            android:text="تومان"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textColor="#156b03"
+                            android:text="7,450,000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_toLeftOf="@+id/aa"
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#c1272a"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="8dp"
+                            android:text="تومان"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textColor="#c1272a"
+                            android:text="7,450,000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/linear_style"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textColor="#273d9e"
+                        android:textSize="18sp"
+                        android:text="خرید آیتیکت"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:elevation="5dp"
+                android:background="#fff"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="ساعت ۱۰ صبح چهارشنبه ۹۵/۰۵/۲۰ چهل و شش نفر از دانش‌آموزان پایه دهم و سوم به طور مشترک با دو دستگاه مینی بوس..."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <ExpandableListView
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/Expandablelist"
+                android:layout_height="80dp"
+                android:elevation="5dp"
+                android:layout_width="match_parent"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <android.support.v7.widget.AppCompatRatingBar
+
+                    android:layout_width="50dp"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
