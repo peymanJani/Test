@@ -171,7 +171,27 @@
                 android:elevation="5dp"
                 android:layout_width="match_parent"/>
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatRatingBar
+                        android:id="@+id/ratingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_gravity="left|center_vertical"
+                        android:numStars="5"
+                        android:layout_width="wrap_content"
+                        android:scaleX=".5"
+                        android:scaleY=".5"
+                        android:layout_height="50dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
 
 
 
